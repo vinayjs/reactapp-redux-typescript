@@ -1,14 +1,16 @@
 import { type } from "os";
+import { ActionType } from "../action-types";
 import { Action } from "../actions";
+
 
 const initialState = 0;
 const reducer = (state: number = initialState, action: Action) => {
     switch (action.type) {
-        case "deposit":
+        case ActionType.DEPOSIT:
             return state + action.payload;
-        case "withdraw":
+        case ActionType.WITHDRAW:
             return state - action.payload;
-        case "bankrupt":
+        case ActionType.BANKRUPT:
             return 0;
         default:
             return state;
@@ -16,4 +18,4 @@ const reducer = (state: number = initialState, action: Action) => {
 }
 
 
-export default reducer
+export default reducer;
