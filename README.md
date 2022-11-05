@@ -1,4 +1,6 @@
-# The project is build basically on the notion of understanding on the core concepts and application of react, redux amd typescript.
+# Apllications of React js, Redux and Typescript
+
+## The project is build basically on the notion of understanding on the core concepts and application of react, redux amd typescript.
 
 1. Rendering Elements
 2. Components and Props
